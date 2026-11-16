@@ -15,7 +15,7 @@ jobs:
           ref: v1.4
 
       - name: Skonfiguruj kompilację x64
-        run: cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DZLIB_BUILD_ZLIB1_DLL=ON
+        run: cmake -S . -B build -G "Visual Studio 18 2026" -A x64 -DZLIB_BUILD_ZLIB1_DLL=ON
 
       - name: Skompiluj DLL
         run: cmake --build build --config Release
