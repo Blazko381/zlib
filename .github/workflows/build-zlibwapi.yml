@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Pobierz źródła zlib 1.4
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: madler/zlib
           ref: v1.4
@@ -34,7 +34,7 @@ jobs:
           Copy-Item $dll.FullName dist/
 
       - name: Udostępnij DLL jako artefakt
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: zlibwapi-v1.4-win-x64
           path: dist/zlibwapi.dll
